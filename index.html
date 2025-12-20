@@ -1,247 +1,228 @@
 <!DOCTYPE html>
 <html lang="rw">
 <head>
-  <meta charset="UTF-8">
-  <title>Africa Lamuka TV</title>
+<meta charset="UTF-8">
+<title>Africa Lamuka TV</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #f9f6f1;
-      color: #222;
-      line-height: 1.9;
-    }
+<style>
+body{
+  margin:0;
+  font-family:Georgia, "Times New Roman", serif;
+  background:#f9f6f1;
+  color:#222;
+  line-height:1.9;
+}
 
-    header {
-      position: relative;
-    }
+/* ===== MENU ===== */
+nav{
+  background:#111;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  margin:0;
+  padding:12px;
+}
+nav ul li{
+  margin:0 20px;
+}
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  letter-spacing:1px;
+}
+nav ul li a:hover{
+  color:#f1e7d0;
+}
 
-    header img {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-    }
+/* ===== HEADER ===== */
+header{
+  position:relative;
+}
+header img{
+  width:100%;
+  max-height:380px;
+  object-fit:cover;
+}
+.hero-text{
+  position:absolute;
+  top:45%;
+  width:100%;
+  text-align:center;
+  color:white;
+  font-size:42px;
+  font-weight:bold;
+  text-shadow:3px 3px 8px black;
+}
 
-    .hero-text {
-      position: absolute;
-      top: 45%;
-      width: 100%;
-      text-align: center;
-      color: white;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 3px 3px 8px black;
-    }
+/* ===== LOGO ===== */
+.logo{
+  position:absolute;
+  top:15px;
+  left:20px;
+  background:rgba(0,0,0,0.6);
+  padding:10px 18px;
+  color:white;
+  font-weight:bold;
+  letter-spacing:2px;
+  border-radius:6px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: -60px auto 0 auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-    }
+/* ===== CONTENT ===== */
+.container{
+  max-width:900px;
+  margin:-60px auto 0;
+  background:white;
+  padding:40px;
+  border-radius:14px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
 
-    h1 {
-      text-align: center;
-      color: #8B0000;
-      font-size: 36px;
-      margin-bottom: 5px;
-    }
+h1{
+  text-align:center;
+  color:#8B0000;
+}
+h2{
+  margin-top:60px;
+  background:#f1e7d0;
+  padding:14px;
+  border-left:6px solid #8B0000;
+}
+p{
+  font-size:18px;
+  text-align:justify;
+}
+.separator{
+  height:4px;
+  background:linear-gradient(to right,#8B0000,#f1e7d0);
+  margin:60px 0;
+}
 
-    h3 {
-      text-align: center;
-      font-style: italic;
-      color: #555;
-      margin-top: 0;
-    }
+/* ===== MEDIA SECTIONS ===== */
+.media-box{
+  background:#f8f8f8;
+  padding:25px;
+  border-radius:10px;
+  margin-bottom:30px;
+}
+.media-box h3{
+  margin-top:0;
+  color:#8B0000;
+}
 
-    h2 {
-      margin-top: 60px;
-      color: #2c3e50;
-      background: #f1e7d0;
-      padding: 14px;
-      border-left: 6px solid #8B0000;
-      border-radius: 6px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-
-    ul {
-      margin-left: 30px;
-      font-size: 18px;
-    }
-
-    li {
-      margin-bottom: 12px;
-    }
-
-    strong {
-      color: #8B0000;
-    }
-
-    .separator {
-      height: 4px;
-      background: linear-gradient(to right, #8B0000, #f1e7d0);
-      margin: 60px 0;
-      border-radius: 3px;
-    }
-
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 30px;
-      margin-top: 60px;
-      font-size: 16px;
-      letter-spacing: 1px;
-    }
-  </style>
+/* ===== FOOTER ===== */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- BANNIÈRE -->
-  <header>
-    <img src="banniere.jpg" alt="Africa Lamuka TV">
-    <div class="hero-text">AFRICA LAMUKA TV</div>
-  </header>
+<!-- MENU -->
+<nav>
+  <ul>
+    <li><a href="#manifeste">Manifeste</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#videos">Vidéos</a></li>
+    <li><a href="#apropos">À propos</a></li>
+  </ul>
+</nav>
 
-  <!-- CONTENU -->
-  <div class="container">
+<!-- HEADER -->
+<header>
+  <div class="logo">AFRICA LAMUKA TV</div>
+  <img src="banniere.jpg" alt="Africa Lamuka TV">
+  <div class="hero-text">AFRICA LAMUKA TV</div>
+</header>
 
-    <h1>IMPAMVU AFRICA IGOMBA GUKANGUKA</h1>
-    <h3>Inyandiko shingiro ya Africa Lamuka TV</h3>
+<div class="container">
 
-    <p>
-      Afurika ifite ubutunzi bwinshi, ariko Abanyafurika ni abatindi;<br>
-      Afurika ifite abaturage bafite ingufu, ariko ni bo bahora bicwa mu ntambara za mpatsibihugu;<br>
-      Afurika ifite abaturage basenga cyane, ariko ni bo bahorana ibyago n’amakuba.
-    </p>
+<!-- MANIFESTE -->
+<section id="manifeste">
+<h1>IMPAMVU AFRICA IGOMBA GUKANGUKA</h1>
 
-    <p>
-      Twebwe abashinze uru rubuga <strong>Africa Lamuka TV</strong> tumaze imyaka irenga 10 dukora
-      ubushakashatsi ku mpamvu zitera Afurika kugira ingorane zavuzwe haruguru.
-      Dusanga ikibazo nyamukuru Abanyafurika bafite ari ikibazo cy’<strong>IMITEKEREREZE n’IMYUMVIRE</strong>.
-    </p>
+<p>
+Afurika ifite ubutunzi bwinshi ariko Abanyafurika ni abatindi.
+Afurika ifite imbaraga z’abantu ariko ikaba ikorerwa intambara zidashira.
+</p>
 
-    <p>
-      Ubushakashatsi twakoze bwerekanye ko imibereho ya muntu (mibi cyangwa se myiza)
-      ituruka mu buryo yitegereza isi n’ibiyiriho, uburyo abisesengura n’imyumvire abikuramo,
-      kuko ari byo bigena ibikorwa akora ngo atunganye imibereho ye.
-    </p>
+<p>
+Africa Lamuka TV yashinzwe kugira ngo isobanure
+<strong>impamvu nyakuri</strong> z’iyi mibereho
+no gufasha Abanyafurika kongera kwiyubaka mu mitekerereze.
+</p>
+</section>
 
-    <p>
-      Iyo witegereje ibikorwa umunyafurika akora, ari na byo akesha amaramuko, usanga ari ibi bikurikira:
-    </p>
+<div class="separator"></div>
 
-    <p><strong>Kwiga (Ishuri)</strong> : Abanyafurika bizera ko nta yindi nzira yo kwigobotora ubukene itari ishuri.</p>
-    <p><strong>Idini</strong> : Abanyafurika barasenga cyane, bakizera ubuzima bwiza nyuma yo kuva muri iyi si yuzuye ibyago.</p>
-    <p><strong>Ubuyobozi na politiki</strong> : Abanyafurika bumvira ubuyobozi kuko bibwira ko bubabereyeho kubereka inzira nziza.</p>
+<!-- ARTICLES -->
+<section id="articles">
+<h2>Articles & Analyses</h2>
 
-    <p>
-      Icyo Abanyafurika batamenya ni uko ishuri, idini n’ubuyobozi na politiki
-      ari ibikoresho twahawe n’Abakoloni, kandi ko iyi si dutuye ari isi y’inyungu.
-    </p>
+<div class="media-box">
+<h3>• Ishuri n’Ubukoloni</h3>
+<p>Uko ishuri ryashyizweho mu kuyobya imitekerereze y’umunyafurika.</p>
+</div>
 
-    <p>
-      Ibi bikoresho bitatu bikoreshejwe mu kuyobya imitekerereze n’imyumvire y’umunyafurika,
-      kugira ngo adakangukira gushakisha ubutunzi no kwirukana mpatsibihugu.
-    </p>
+<div class="media-box">
+<h3>• Idini n’Imyumvire</h3>
+<p>Impamvu gusenga byinshi bidakuraho ubukene.</p>
+</div>
 
-    <p>
-      Ishuri ribereyeho gushyira umwana mu gihome kuva ku myaka 7 kugeza kuri 25,
-      igihe imitekerereze ye iba iri kubakwa, ariko agahishwa aho ubutunzi nyakuri buherereye:
-      zahabu, diyama, coltan.
-    </p>
+</section>
 
-    <p>
-      Idini rigisha abantu kwihanganira imibabaro aho kwirwanaho,
-      bigatuma bashakisha Imana aho gushakisha ubutunzi bwabo.
-    </p>
+<div class="separator"></div>
 
-    <p>
-      Ubuyobozi na politiki bikoreshejwe mu gushyiraho amategeko abuza umuturage kwegera ubutunzi,
-      mu gihe mpatsibihugu zikomeza kuyobora zica inyuma.
-    </p>
+<!-- VIDEOS -->
+<section id="videos">
+<h2>Vidéos</h2>
 
-    <p>
-      Izi nzego eshatu ni ibikoresho by’ubukoloni.
-      Igihe kirageze cyo kubisuzuma no kubiha isura nyakuri bifite.
-    </p>
+<div class="media-box">
+<h3>🎥 Africa Lamuka TV – Émission 1</h3>
+<p>Isesengura ry’inyandiko shingiro ya mouvement.</p>
+</div>
 
-    <p>
-      Ni yo mpamvu hashyizweho <strong>Africa Lamuka TV</strong> nk’urubuga rukangurira umuturage
-      kumenya impamvu y’imibereho mibi ye n’inzira zo kuyivamo.
-    </p>
+<div class="media-box">
+<h3>🎥 Imperialisme & Trois Forces</h3>
+<p>Uko imbaraga eshatu zigenzura isi n’icyo Afurika igomba gukora.</p>
+</div>
 
-    <div class="separator"></div>
+</section>
 
-    <h2>2. Imbaraga eshatu zigena imibereho ya muntu</h2>
+<div class="separator"></div>
 
-    <p><strong>Imbaraga z’Umuremyi</strong> : zigendera ku mahame 6 agenga ibiriho
-      (ubumwe, ihuriro, gahunda, uburinganire, ubwenge n’iyuburura).</p>
+<!-- A PROPOS -->
+<section id="apropos">
+<h2>À propos</h2>
 
-    <p><strong>Imbaraga z’Ibiriho</strong> : indemabintu zihora zihinduka zigatanga ubuzima bushya.</p>
+<p>
+Africa Lamuka TV ni urubuga rwo gukangura imyumvire,
+gushingiye ku bushakashatsi bw’imyaka myinshi
+ku buryo imperialisme ikorera mu mutwe w’umuntu.
+</p>
 
-    <p><strong>Imbaraga z’Umutima</strong> : imitekerereze n’amarangamutima bigena imyitwarire y’umuntu.</p>
+<p>
+Intego si politiki gusa,
+ni <strong>impinduka y’imyumvire</strong>.
+</p>
+</section>
 
-    <p>
-      Iyo imbaraga z’umutima zidakoreshejwe neza,
-      izindi mbaraga zirahindukira zikabangamira umuntu.
-    </p>
+</div>
 
-    <div class="separator"></div>
-
-    <h2>3. Imperialisme ishingira ku kutamenya</h2>
-
-    <ul>
-      <li>Umuntu utagira ubumenyi ntashobora kwirwanaho</li>
-      <li>Utazi imbaraga yifitemo ahora atekereza ko akeneye undi</li>
-    </ul>
-
-    <p>Africa Lamuka TV ihagurukiye <strong>gusenya urwo rujijo</strong>.</p>
-
-    <div class="separator"></div>
-
-    <h2>4. Intego ya Africa Lamuka TV</h2>
-
-    <ul>
-      <li>Gukora ubushakashatsi ku mibereho y’umuturage</li>
-      <li>Gutanga ubumenyi binyuze mu bitabo, amahugurwa, filime n’imbuga nkoranyambaga</li>
-      <li>Gufasha abaturage kuvugurura ishuri, idini n’ubuyobozi</li>
-    </ul>
-
-    <div class="separator"></div>
-
-    <h2>5. Uruhare rwawe</h2>
-
-    <ul>
-      <li>Kwiga</li>
-      <li>Kwigisha abandi</li>
-      <li>Kudatinya ukuri</li>
-      <li>Kwemera guhinduka</li>
-    </ul>
-
-    <p>
-      Africa Lamuka TV ni intangiriro.<br>
-      Urugendo ni urwa twese.<br>
-      Afurika ntikeneye abatabazi.<br>
-      Afurika ikeneye abantu bakangutse.
-    </p>
-
-  </div>
-
-  <footer>
-    © Africa Lamuka TV — Gukangura imyumvire y’Abanyafurika
-  </footer>
+<footer>
+© Africa Lamuka TV — Gukangura Imyumvire y’Abanyafurika
+</footer>
 
 </body>
-</html>
+  </html>
 

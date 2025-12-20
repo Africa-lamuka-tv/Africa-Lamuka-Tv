@@ -8,50 +8,61 @@
 <style>
 body{
   margin:0;
-  background:#f2f2f2;
   font-family: Georgia, serif;
-  line-height:1.9;
+  background:#f2f2f2;
+  line-height:1.8;
 }
 
 .container{
   max-width:900px;
   margin:auto;
-  background:#ffffff;
-  padding:40px 25px;
+  padding:20px;
 }
 
-h1, h2{
+.banniere{
+  width:100%;
+  height:250px;
+  background:#cccccc; /* couleur de remplacement si image non chargée */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:30px;
+  background-size:cover;
+  background-position:center;
+}
+
+.bloc{
+  background:white;
+  border:2px solid #7b0000;
+  padding:25px;
+  margin-bottom:30px;
+  border-radius:6px;
+}
+
+.bloc h1, .bloc h2{
   color:#7b0000;
 }
 
-h1{
+.bloc h1{
   text-align:center;
 }
 
-h2{
+.bloc h2{
   margin-top:0;
 }
 
-p{
+.bloc p{
   font-size:18px;
   text-align:justify;
-}
-
-section{
-  margin-bottom:50px;
-}
-
-.divider{
-  border:none;
-  height:3px;
-  background:linear-gradient(to right,#7b0000,#cccccc);
-  margin:50px 0;
 }
 
 footer{
   text-align:center;
   font-weight:bold;
-  margin-top:60px;
+  margin-top:50px;
   color:#7b0000;
 }
 </style>
@@ -61,146 +72,73 @@ footer{
 
 <div class="container">
 
-<section>
+<!-- Banniere -->
+<div class="banniere" style="background-image:url('banniere.jpg');">
+Africa Lamuka TV
+</div>
+
+<!-- Blocs -->
+<section class="bloc">
 <h1>IMPAMVU AFRICA IGOMBA GUKANGUKA</h1>
 <p><em>Inyandiko shingiro ya Africa Lamuka TV</em></p>
-
 <p>Afurika ifite ubutunzi bwinshi, ariko Abanyafurika ni abatindi;</p>
 <p>Afurika ifite abaturage bafite ingufu, ariko ni bo bahora bicwa mu NTAMBARA za mpatsibihugu;</p>
 <p>Afurika ifite abaturage basenga cyane, ariko ni bo bahorana ibyago n'amakuba;</p>
-
-<p>
-Twebwe abashinze uru rubuga "Africa Lamuka TV" tumaze imyaka irenga 10 dukora ubushakashatsi ku mpamvu zitera Afurika kugira ingorane tumaze kuvuga, dusanga ikibazo nyamukuru Abanyafurika bafite ari ikibazo cy’IMITEKEREREZE n’IMYUMVIRE.
-</p>
-
-<p>
-Ubushakashatsi twakoze bwerekanye ko imibereho ya muntu (mibi cyangwa myiza) ituruka mu buryo yitegereza isi n'ibiyiriho, uburyo abisesengura n'imyumvire abikuramo; kuko ari byo bigena ibikorwa akora ngo atunganye imibereho ye.
-</p>
+<p>Twebwe abashinze uru rubuga "Africa Lamuka TV" tumaze imyaka irenga 10 dukora ubushakashatsi ku mpamvu zitera Afurika kugira ingorane tumaze kuvuga, dusanga ikibazo nyamukuru ari IMITEKEREREZE n’IMYUMVIRE.</p>
+<p>Ubushakashatsi twakoze bwerekanye ko imibereho ya muntu ituruka mu buryo yitegereza isi n'ibiyiriho, uburyo ayisesengura n'imyumvire abikuramo; kuko ari byo bigena ibikorwa akora ngo atunganye imibereho ye.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Ibyo umunyafurika ashingiraho imibereho</h2>
-
-<p>
-Kwiga (ishuri): Abanyafurika bizera ko nta yindi nzira umuntu ashobora kunyura ngo yigobotore ubukene itari ishuri.
-</p>
-
-<p>
-Idini: Abanyafurika barasenga cyane, bakizera ubuzima bwiza hanyuma yo kuva muri iyi si (yavumwe ibyago n’imiruho).
-</p>
-
-<p>
-Ubuyobozi na politiki: Abanyafurika bumvira ubuyobozi cyane kandi bakabuyoboka kuko bibwira ko bubereyeho kubereka inzira nziza bagomba kunyuramo ngo babeho neza.
-</p>
-
-<p>
-Icyo Abanyafurika batamenya ni uko ibi bikoresho uko ari bitatu (ishuri, idini n’ubuyobozi na politiki) ari ibikoresho twahawe n’Abakoloni.
-</p>
+<p>Kwiga (ishuri): Abanyafurika bizera ko nta yindi nzira umuntu ashobora kunyura ngo yigobotore ubukene itari ishuri.</p>
+<p>Idini: Abanyafurika barasenga cyane, bakizera ubuzima bwiza hanyuma yo kuva muri iyi si (yavumwe ibyago n’imiruho).</p>
+<p>Ubuyobozi na politiki: Abanyafurika bumvira ubuyobozi cyane kandi bakabuyoboka kuko bibwira ko bubereyeho kubereka inzira nziza bagomba kunyuramo ngo babeho neza.</p>
+<p>Icyo batamenya ni uko ibi bikoresho uko ari bitatu (ishuri, idini n’ubuyobozi na politiki) ari ibikoresho twahawe n’Abakoloni.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Ishuri</h2>
-
-<p>
-Ishuri ribereyeho gushyira umwana mu gihome (inzu ifunze = icyumba cy’ishuri = classe) aho yinjira afite imyaka 7 akazagisohokamo afite imyaka 25.
-</p>
-
-<p>
-Muri iki gihe tumwigisha byose, ariko tukamuhisha zahabu, diyama, coltan — ari bwo butunzi nyakuri isi yubakiyeho.
-</p>
-
-<p>
-Ngiyo impamvu Abanyafurika ari abakene kandi Afurika yuzuye ubutunzi.
-</p>
+<p>Ishuri ribereyeho gushyira umwana mu gihome (inzu ifunze = classe) aho yinjira afite imyaka 7 akazagisohokamo afite imyaka 25.</p>
+<p>Muri iki gihe tumwigisha byose, ariko tukamuhisha zahabu, diyama, coltan — ari bwo butunzi nyakuri isi yubakiyeho.</p>
+<p>Ngiyo impamvu Abanyafurika ari abakene kandi Afurika yuzuye ubutunzi.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Idini</h2>
-
-<p>
-Idini ryigisha abantu ko bavukana ubusembwa kubera icyaha cya ADAMU, rikabwira umuntu gucisha make no kwihanganira imibabaro.
-</p>
-
-<p>
-Iyi myumvire ituma abantu badahangana na mpatsibihugu uduhoza mu ntambara zo kutwica no kudusahura.
-</p>
+<p>Idini ryigisha abantu ko bavukana ubusembwa kubera icyaha cya ADAMU, rikabwira umuntu gucisha make no kwihanganira imibabaro.</p>
+<p>Iyi myumvire ituma abantu badahangana na mpatsibihugu uduhoza mu ntambara zo kutwica no kudusahura.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Ubuyobozi na politiki</h2>
-
-<p>
-Binyuze mu mategeko n’inzego za Leta, umuturage abuzwa kwisanzura no kugera ku butunzi.
-</p>
-
-<p>
-Mu by’ukuri mpatsibihugu ni zo zigena abayobozi batuyobora binyuze mu kinyoma n’iterabwoba.
-</p>
+<p>Binyuze mu mategeko n’inzego za Leta, umuturage abuzwa kwisanzura no kugera ku butunzi.</p>
+<p>Mu by’ukuri mpatsibihugu ni zo zigena abayobozi batuyobora binyuze mu kinyoma n’iterabwoba.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Imbaraga eshatu zigena imibereho ya muntu</h2>
-
-<p>
-1. Imbaraga z’Umuremyi: zigena ibyaremwe byose kandi zubahiriza amahame 6 agenga ibiriho.
-</p>
-
-<p>
-2. Imbaraga z’Ibiriho: indemabintu zihora mu rugendo rwo guhinduka.
-</p>
-
-<p>
-3. Imbaraga z’Umutima: imitekerereze n’amarangamutima bigena ibikorwa by’umuntu.
-</p>
-
-<p>
-Iyo imbaraga z’umutima zidakoreshejwe neza, izindi mbaraga zirahindukira zikabangamira umuntu.
-</p>
+<p>1. Imbaraga z’Umuremyi: zigena ibyaremwe byose kandi zubahiriza amahame 6 agenga ibiriho.</p>
+<p>2. Imbaraga z’Ibiriho: indemabintu zihora mu rugendo rwo guhinduka.</p>
+<p>3. Imbaraga z’Umutima: imitekerereze n’amarangamutima bigena ibikorwa by’umuntu.</p>
+<p>Iyo imbaraga z’umutima zidakoreshejwe neza, izindi mbaraga zirahindukira zikamwangiriza.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Imperialisme ishingira ku kutamenya</h2>
-
-<p>
-Umuntu utagira ubumenyi ntashobora kwirwanaho.
-</p>
-
-<p>
-Utazi imbaraga ze ahora atekereza ko akeneye undi.
-</p>
-
-<p>
-Africa Lamuka TV ihagurukiye gusenya uru rujijo.
-</p>
+<p>Umuntu utagira ubumenyi ntashobora kwirwanaho.</p>
+<p>Utazi imbaraga ze ahora atekereza ko akeneye undi.</p>
+<p>Africa Lamuka TV ihagurukiye gusenya uru rujijo.</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Intego ya Africa Lamuka TV</h2>
-
 <p>• Gushyiraho ikigo cy’ubushakashatsi ku mibereho y’umuturage</p>
 <p>• Gutangaza inyandiko, amahugurwa, films n’ibindi</p>
 <p>• Gufasha abaturage kuvugurura ishuri, idini na politiki</p>
 </section>
 
-<hr class="divider">
-
-<section>
+<section class="bloc">
 <h2>Uruhare rwawe</h2>
-
 <p>Gukanguka si ukwumva gusa:</p>
 <p>• Kwiga</p>
 <p>• Kwigisha abandi</p>
@@ -216,5 +154,4 @@ Afurika ntikeneye abatabazi. Afurika ikeneye abantu bakangutse.
 
 </body>
   </html>
-  
-
+                               

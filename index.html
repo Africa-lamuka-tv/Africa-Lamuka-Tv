@@ -6,63 +6,73 @@
 <title>Africa Lamuka TV</title>
 
 <style>
-body{
+body {
   margin:0;
-  font-family: Georgia, serif;
-  background:#f2f2f2;
-  line-height:1.8;
+  font-family: 'Georgia', serif;
+  background:#eaeaea;
+  line-height:1.9;
 }
 
-.container{
+.container {
   max-width:900px;
   margin:auto;
   padding:20px;
 }
 
-.banniere{
+/* BANNIERE */
+.banniere {
   width:100%;
-  height:250px;
-  background:#cccccc; /* couleur de remplacement si image non chargée */
+  height:300px;
+  background:#555 url('banniere.jpg') center/cover no-repeat;
+  position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
   color:white;
-  font-size:28px;
+  font-size:32px;
   font-weight:bold;
-  margin-bottom:30px;
-  background-size:cover;
-  background-position:center;
+  text-shadow:2px 2px 6px rgba(0,0,0,0.7);
+  margin-bottom:40px;
+  border-radius:8px;
 }
 
-.bloc{
+/* BLOCS SECTIONS */
+.bloc {
   background:white;
-  border:2px solid #7b0000;
-  padding:25px;
+  border-radius:12px;
+  padding:30px;
   margin-bottom:30px;
-  border-radius:6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.bloc h1, .bloc h2{
+/* Fond différent par bloc (alternance) */
+.bloc:nth-child(odd) {
+  background:#ffffff;
+}
+.bloc:nth-child(even) {
+  background:#fff8f0;
+}
+
+.bloc h1, .bloc h2 {
   color:#7b0000;
-}
-
-.bloc h1{
-  text-align:center;
-}
-
-.bloc h2{
   margin-top:0;
 }
 
-.bloc p{
-  font-size:18px;
-  text-align:justify;
+.bloc h1 {
+  text-align:center;
 }
 
-footer{
+.bloc p {
+  font-size:18px;
+  text-align:justify;
+  margin-bottom:12px;
+}
+
+/* Footer */
+footer {
   text-align:center;
   font-weight:bold;
-  margin-top:50px;
+  margin-top:60px;
   color:#7b0000;
 }
 </style>
@@ -72,12 +82,12 @@ footer{
 
 <div class="container">
 
-<!-- Banniere -->
-<div class="banniere" style="background-image:url('banniere.jpg');">
+<!-- BANNIERE -->
+<div class="banniere">
 Africa Lamuka TV
 </div>
 
-<!-- Blocs -->
+<!-- BLOCS -->
 <section class="bloc">
 <h1>IMPAMVU AFRICA IGOMBA GUKANGUKA</h1>
 <p><em>Inyandiko shingiro ya Africa Lamuka TV</em></p>
@@ -153,5 +163,5 @@ Afurika ntikeneye abatabazi. Afurika ikeneye abantu bakangutse.
 </div>
 
 </body>
-  </html>
-                               
+</html>
+
